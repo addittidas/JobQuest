@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobQuest</title>
+
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+
+    <!-- ChartDataLabels plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+    <!-- FusionCharts -->
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.india.js"></script>
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        JobQuest
+    </header>
+
+    <div id="welcome-page">
+        <h2 style="font-size: 50px; font-family: Calibri">Welcome to JobQuest</h2>
+        <p style="font-size: 30px; font-family: Calibri">
+            "Discover Your Next Career Move with Data-Driven Insights"
+            <br>Job qualification analytics based on current job postings
+        </p>
+        <br>
+        <button onclick="showMenu()">Get Started</button>
+    </div>
+
+    <div id="menu-page">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showContent('dataScience')">Data Science</a></li>
+                    <li><a href="#" onclick="showContent('ml')">Machine Learning</a></li>
+                    <li><a href="#" onclick="showContent('webDev')">Web Development</a></li>
+                </ul>
+            </nav>
+
+            <main id="content">
+                <h2 style="font-size: 40px; font-family: Calibri">Welcome to JobQuest</h2>
+                <br>
+                <div class="center-box">
+                    <p style="font-size: 30px; font-family: Calibri">
+                        Select a category from the left navigation bar to see more details.
+                        <br>You can get to know the following feautures of the field you choose!</p>
+                </div>
+                <div id="key-features">
+                    <div class="feature">
+                        <i class="fas fa-graduation-cap fa-2x"></i>
+                        <h3>Education Levels</h3>
+                        <p>Discover the most common education levels required for various job roles.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-briefcase fa-2x"></i>
+                        <h3>Experience Requirements</h3>
+                        <p>Learn about the experience needed to qualify for top roles in your field.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-tools fa-2x"></i>
+                        <h3>Top Skills</h3>
+                        <p>Explore the key skills employers are looking for in today's job market.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                        <h3>Job Location Density</h3>
+                        <p>See where job opportunities are concentrated across different regions.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuLinks = document.querySelectorAll("nav ul li a");
+
+            menuLinks.forEach(link => {
+                link.addEventListener("click", function() {
+                    // Remove .active class from all links
+                    menuLinks.forEach(link => link.classList.remove("active"));
+                    // Add .active class to the clicked link
+                    this.classList.add("active");
+                });
+            });
+        });
+    </script>
+    <footer>
+        &copy; 2024 JobQuest
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
