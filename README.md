@@ -11,13 +11,21 @@ This project scrapes job information related to Data Science, Machine Learning, 
 
 ## Technologies Used
 
-- **Python**
-- **OpenCV**: For image processing and plate detection.
-- **Tesseract OCR**: For extracting text from license plates.
-- **Flask**: Backend routing and handling user requests.
-- **HTML/CSS/Bootstrap**: Frontend layout and styling for user interface.
-- **JavaScript**: Client-side interactivity
-- **Jupyter Notebook**: For development and testing.
+### Backend and Data Processing
+- **Python**: The primary programming language used for scripting, data processing, and analysis.
+- **Selenium**: Automates web browsing to scrape job data from various online sources.
+- **BeautifulSoup**: Parses HTML pages to extract structured data from job listings.
+
+### Data Visualization
+- **GeoJSON and JSON**: Stores location data in JSON format, allowing map-based visualizations to show job locations by region.
+
+### Frontend and Web Interface
+- **HTML/CSS**: Structures and styles the web interface for displaying analysis results.
+- **JavaScript**: Enhances interactivity, enabling users to view data insights in real-time.
+
+### Additional Tools
+- **WebDriver Manager**: Manages and downloads the appropriate WebDriver for Selenium, simplifying setup.
+- **Requests**: Manages additional HTTP requests when accessing API data.
 
 ## Installation
 
@@ -41,20 +49,21 @@ This project scrapes job information related to Data Science, Machine Learning, 
 
 6. Open your web browser and go to http://127.0.0.1:5500/index.html to use the application or simply run the index.html file.
 
-**Note**: - For this project, external converters have been used to convert xlsx files to csv files and csv files to json files.
-          - Location_Count folder is specially for the location analysis map.
-          - index.html is the main file for the website, script.js is the JavaScript file and styles.css is for layout and design of the relevant elements.
+**Note**:
+- For this project, external converters have been used to convert xlsx files to csv files and csv files to json files.
+- Location_Count folder is specially for the location analysis map.
+- index.html is the main file for the website, script.js is the JavaScript file and styles.css is for layout and design of the relevant elements.
 
 ## Example Output
 
 Here is an example output showing the web interface and analysis of jobs using graphs, charts and maps:
 
-![Cover Page](Output_Images\output1.png)
+![Cover Page](Output_Images/output1.png)
 
-![Cover Page](Output_Images\output2.png)
+![Cover Page](Output_Images/output2.png)
 
-![Cover Page](Output_Images\output3.png)
+![Cover Page](Output_Images/output3.png)
 
-![Cover Page](Output_Images\output4.png)
+![Cover Page](Output_Images/output4.png)
 
-![Cover Page](Output_Images\output5.png)
+![Cover Page](Output_Images/output5.png)
