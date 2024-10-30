@@ -1,23 +1,13 @@
-# StatePlate
+# JobQuest
 
-StatePlate is a web application that processes images to detect and display license plate numbers with the state it belongs to. Users can upload an image, and the application will use computer vision techniques to extract and output the license plate number with the respective state.
-
-## Objective
-The objective of this project is to develop a comprehensive pipeline for processing raw image data to derive meaningful insights using machine learning (ML) and image processing techniques. This pipeline will focus on the key tasks of data pre-processing, segmentation, detection, and classification, applied in a sequential manner to facilitate effective data analysis and interpretation. The Python programming language, along with essential libraries for image processing and ML, will be used to implement the pipeline.
-
-## Pipeline Overview
-The ML and image processing pipeline consists of four main stages:
-1.	Data Pre-processing
-2.	Segmentation
-3.	Object Detection
-4.	Classification
-Each stage is designed to sequentially transform the raw image data into a structured format that enables accurate interpretation and insight extraction.
+This project scrapes job information related to Data Science, Machine Learning, and Web Development from online sources. The collected data is stored in CSV and JSON formats and analyzed to provide insights into job trends, including salary, experience, skills, education, and location. A web interface allows users to view these analyses in graphs and a map for location-based insights.
 
 ## Features
 
-- **Upload Image**: Users can upload images of vehicles with visible license plates.
-- **Automatic Plate Detection**: The app detects and extracts the license plate number from the uploaded image and accordingly tells the state the car belongs to.
-- **User-Friendly Interface**: Simple, easy-to-use web interface.
+- **Web Scraping**: Automates data extraction from job postings related to specific fields.
+- **Data Processing**: Cleans and organizes data for structured analysis.
+- **Analytical Insights**: Provides insights on job requirements, salary, experience, and location distribution.
+- **Web Interface**: Allows users to select job categories and view corresponding analyses in visual formats.
 
 ## Technologies Used
 
@@ -33,28 +23,38 @@ Each stage is designed to sequentially transform the raw image data into a struc
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/addittidas/StatePlate.git
-   cd StatePlate
+   git clone https://github.com/addittidas/JobQuest.git
+   cd JobQuest
    
 2. Install the necessary dependencies:
    ```bash
    pip install -r requirements.txt
-   
-3. Run the Jupyter Notebook to train and save the model:
 
-   - Open Number_Plate_Deep_Learning_main.ipynb in Jupyter Notebook.
-   - Execute all cells to train the model.
-   - Save the trained model for further use.
+3. WebDriver Setup
+    Ensure the appropriate WebDriver (e.g., ChromeDriver) is installed for Selenium. The webdriver_manager library can automate driver management:
+    ```bash
+   pip install webdriver_manager
 
-4. Change the model path in deeplearning.py to point to the saved model.
-5. Run the flask application:
-   ```bash
-   python app.py
-6. Open your web browser and go to http://127.0.0.1:5000 to use the application.
+4. Run the .ipynb files one by one for web scrapping and then data preprocessing and analysis.
 
+5. The files generated after running the above files will be used for the website to show the graphs, charts and maps.
+
+6. Open your web browser and go to http://127.0.0.1:5500/index.html to use the application or simply run the index.html file.
+
+**Note**: - For this project, external converters have been used to convert xlsx files to csv files and csv files to json files.
+          - Location_Count folder is specially for the location analysis map.
+          - index.html is the main file for the website, script.js is the JavaScript file and styles.css is for layout and design of the relevant elements.
 
 ## Example Output
 
-Here is an example output showing the detected license plate number with the corresponding state:
+Here is an example output showing the web interface and analysis of jobs using graphs, charts and maps:
 
-![Detected License Plate](output_example.jpg)
+![Cover Page](Output_Images\output1.png)
+
+![Cover Page](Output_Images\output2.png)
+
+![Cover Page](Output_Images\output3.png)
+
+![Cover Page](Output_Images\output4.png)
+
+![Cover Page](Output_Images\output5.png)
