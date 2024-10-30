@@ -51,5 +51,3 @@ This project scrapes job information related to Data Science, Machine Learning, 
 
 **Note**:
 - For this project, external converters have been used to convert xlsx files to csv files and csv files to json files.
-- Location_Count folder is specially for the location analysis map.
-- index.html is the main file for the website, script.js is the JavaScript file and styles.css is for layout and design of the relevant elements.
