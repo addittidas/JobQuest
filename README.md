@@ -51,3 +51,7 @@ This project scrapes job information related to Data Science, Machine Learning, 
 
 **Note**:
 - For this project, external converters have been used to convert xlsx files to csv files and csv files to json files.
+
+- Link to Report: https://docs.google.com/document/d/1tY37AbBlIQTtKqTESgDhRDB-qEZlOI9cpJTwfHUmwZ0/edit?usp=sharing
+
+- Link to PPT: https://www.canva.com/design/DAGPnM53nK4/kusFhJeWn2t_hZ7M3F8rCA/edit?utm_content=DAGPnM53nK4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
